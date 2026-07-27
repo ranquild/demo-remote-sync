@@ -1,0 +1,9 @@
+name: Sync
+entity_id: ScyRwV73Wv750BOBCBnlV
+slug: sync
+created_at: '2026-07-27T01:58:38.115674Z'
+serdes/meta:
+- id: ScyRwV73Wv750BOBCBnlV
+  label: sync
+  model: Collection
+is_remote_synced: true
