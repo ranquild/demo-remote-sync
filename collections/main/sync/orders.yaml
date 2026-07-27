@@ -9,7 +9,10 @@ parameter_mappings: []
 dataset_query:
   database: Sample Database
   stages:
-  - source-table:
+  - aggregation:
+    - - count
+      - {}
+    source-table:
     - Sample Database
     - null
     - ORDERS
@@ -17,10 +20,11 @@ dataset_query:
   lib/type: mbql/query
 visualization_settings:
   column_settings: null
+  table.cell_column: count
 card_schema: 23
 serdes/meta:
 - id: 1gnjGLVRoCnu8_aIt4wAp
   label: orders
   model: Card
-last_used_at: '2026-07-27T01:59:48.669797Z'
+last_used_at: '2026-07-27T02:45:14.795745Z'
 type: question
