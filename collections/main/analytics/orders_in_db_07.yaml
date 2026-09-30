@@ -1,0 +1,32 @@
+name: Orders in DB 07
+entity_id: VxokidHqE2kXPfLJm9Glz
+created_at: '2026-09-30T20:16:09.296249Z'
+creator_id: api-key-user-75e37d3f-71e0-4e84-9f95-02187929b1de@api-key.invalid
+display: scalar
+collection_id: S1uEU3PfmN9OWSiMe09s4
+parameters: []
+parameter_mappings: []
+dataset_query:
+  database: DB 07
+  stages:
+  - native: select count(*) from orders
+    lib/type: mbql.stage/native
+  lib/type: mbql/query
+result_metadata:
+- base_type: type/BigInteger
+  database_type: int8
+  display_name: count
+  field_ref:
+  - field
+  - count
+  - base-type: type/BigInteger
+  name: count
+  semantic_type: type/Quantity
+visualization_settings:
+  column_settings: null
+card_schema: 24
+serdes/meta:
+- id: VxokidHqE2kXPfLJm9Glz
+  label: orders_in_db_07
+  model: Card
+type: question
