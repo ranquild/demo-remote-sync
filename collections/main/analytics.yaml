@@ -1,0 +1,9 @@
+name: Analytics
+entity_id: S1uEU3PfmN9OWSiMe09s4
+slug: analytics
+created_at: '2026-09-30T20:05:51.182607Z'
+serdes/meta:
+- id: S1uEU3PfmN9OWSiMe09s4
+  label: analytics
+  model: Collection
+is_remote_synced: true

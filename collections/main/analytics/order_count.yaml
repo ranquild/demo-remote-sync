@@ -1,0 +1,28 @@
+name: Order count
+entity_id: 0Z_YlJOaTe_6Ygech7Pw3
+created_at: '2026-09-30T20:05:51.62765Z'
+creator_id: api-key-user-75e37d3f-71e0-4e84-9f95-02187929b1de@api-key.invalid
+display: scalar
+collection_id: S1uEU3PfmN9OWSiMe09s4
+parameters: []
+parameter_mappings: []
+dataset_query:
+  database: Warehouse
+  stages:
+  - aggregation:
+    - - count
+      - {}
+    source-table:
+    - Warehouse
+    - public
+    - orders
+    lib/type: mbql.stage/mbql
+  lib/type: mbql/query
+visualization_settings:
+  column_settings: null
+card_schema: 24
+serdes/meta:
+- id: 0Z_YlJOaTe_6Ygech7Pw3
+  label: order_count
+  model: Card
+type: question
