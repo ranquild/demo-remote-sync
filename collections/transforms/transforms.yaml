@@ -1,0 +1,10 @@
+name: Transforms
+entity_id: Faz92vBNE6dztfC4-FJ7T
+slug: transforms
+created_at: '2026-09-30T20:13:37.220496Z'
+namespace: transforms
+serdes/meta:
+- id: Faz92vBNE6dztfC4-FJ7T
+  label: transforms
+  model: Collection
+is_remote_synced: true
