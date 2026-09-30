@@ -1,5 +1,5 @@
 name: Revenue by month
-description: Sum of orders.total (billed amount, incl. tax, after discount) from the Warehouse orders table, by order created_at month.
+description: my local edit
 entity_id: i8sM6tXU0iS7kCUDA8n-4
 created_at: '2026-09-30T20:10:18.181761Z'
 creator_id: api-key-user-9bb1996c-e3d2-40d3-97e2-0508f18291cd@api-key.invalid
