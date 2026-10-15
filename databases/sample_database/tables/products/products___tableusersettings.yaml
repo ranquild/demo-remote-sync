@@ -1,0 +1,9 @@
+collection_id: librarylibrarydatadat
+created_at: '2026-10-15T16:01:01.843191Z'
+is_published: true
+table_id:
+- Sample Database
+- null
+- PRODUCTS
+serdes/meta:
+- model: TableUserSettings
