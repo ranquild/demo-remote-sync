@@ -1,0 +1,9 @@
+collection: YTFZLpmAuPiat2MctTGnW
+description: Look up customers and change their tier.
+entity_id: EPdpBco_cR2aI4kv1RcTT
+name: Order desk
+path: dist/index.js
+slug: order-desk
+version: 1
+serdes/meta:
+- model: DataApp

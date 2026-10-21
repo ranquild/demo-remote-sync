@@ -1,0 +1,48 @@
+collection_id: YTFZLpmAuPiat2MctTGnW
+creator_id: pr@metabase.com
+entity_id: tn-2RilxdYQSq0gO5F3Eh
+implicit: []
+name: Update customer tier
+parameter_mappings: []
+parameters:
+- id: a1
+  position: 0
+  required: true
+  slug: customer_id
+  target:
+  - variable
+  - - template-tag
+    - customer_id
+  type: number/=
+- id: a2
+  position: 1
+  required: true
+  slug: tier
+  target:
+  - variable
+  - - template-tag
+    - tier
+  type: string/=
+query:
+- database_id: Postgres
+  dataset_query:
+    database: Postgres
+    stages:
+    - native: UPDATE public.customers SET tier = {{tier}} WHERE customer_id = {{customer_id}}
+      template-tags:
+      - display-name: Customer ID
+        id: a1
+        name: customer_id
+        required: true
+        type: number
+      - display-name: Tier
+        id: a2
+        name: tier
+        required: true
+        type: text
+      lib/type: mbql.stage/native
+    lib/type: mbql/query
+type: query
+visualization_settings: {}
+serdes/meta:
+- model: Action

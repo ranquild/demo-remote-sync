@@ -1,0 +1,32 @@
+name: Customers by tier
+entity_id: 2RBHx2krbBWT1rXv8MfdT
+creator_id: pr@metabase.com
+display: table
+collection_id: YTFZLpmAuPiat2MctTGnW
+parameters: []
+parameter_mappings: []
+dataset_query:
+  database: Postgres
+  stages:
+  - aggregation:
+    - - count
+      - name: Customers
+    breakout:
+    - - field
+      - base-type: type/Text
+        effective-type: type/Text
+      - - Postgres
+        - public
+        - customers
+        - tier
+    source-table:
+    - Postgres
+    - public
+    - customers
+    lib/type: mbql.stage/mbql
+  lib/type: mbql/query
+visualization_settings: {}
+card_schema: 24
+serdes/meta:
+- model: Card
+type: question
