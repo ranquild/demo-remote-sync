@@ -1,9 +1,0 @@
-name: Data
-entity_id: librarylibrarydatadat
-slug: data
-created_at: '2026-10-15T15:59:34.979327Z'
-type: library-data
-parent_id: librarylibrarylibrary
-serdes/meta:
-- model: Collection
-is_remote_synced: true
