@@ -1,0 +1,6 @@
+name: 'Data App: badge-repro'
+entity_id: dx6XvB9o0b1nxwRkCl4vo
+slug: data_app__badge_repro
+namespace: data-apps
+serdes/meta:
+- model: Collection

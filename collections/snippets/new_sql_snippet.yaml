@@ -1,0 +1,7 @@
+name: New SQL snippet
+entity_id: czydoCSzgTzHjMWadXln0
+content: asd
+creator_id: alexander.polyankin@metabase.com
+template_tags: {}
+serdes/meta:
+- model: NativeQuerySnippet

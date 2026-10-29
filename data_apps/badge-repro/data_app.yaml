@@ -1,0 +1,8 @@
+collection: dx6XvB9o0b1nxwRkCl4vo
+entity_id: jC-xmVHK7RcGYKyYPhJoS
+name: Badge repro
+path: dist/index.js
+slug: badge-repro
+version: 1
+serdes/meta:
+- model: DataApp
