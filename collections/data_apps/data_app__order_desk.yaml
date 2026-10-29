@@ -1,6 +1,0 @@
-name: 'Data App: order-desk'
-entity_id: YTFZLpmAuPiat2MctTGnW
-slug: data_app__order_desk
-namespace: data-apps
-serdes/meta:
-- model: Collection
