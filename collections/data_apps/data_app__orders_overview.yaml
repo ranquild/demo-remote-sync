@@ -1,0 +1,6 @@
+name: 'Data App: orders-overview'
+entity_id: 6B_9m3KmzLtRb7Jsx3Bgk
+slug: data_app__orders_overview
+namespace: data-apps
+serdes/meta:
+- model: Collection

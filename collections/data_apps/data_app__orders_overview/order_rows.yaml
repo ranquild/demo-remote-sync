@@ -1,0 +1,94 @@
+name: Order rows
+entity_id: XNNPNDgTvnZFbvms0Boaq
+creator_id: alexander.polyankin@metabase.com
+display: table
+collection_id: 6B_9m3KmzLtRb7Jsx3Bgk
+parameters: []
+parameter_mappings: []
+dataset_query:
+  database: Sample Database
+  stages:
+  - fields:
+    - - field
+      - {}
+      - - Sample Database
+        - null
+        - ORDERS
+        - ID
+    - - field
+      - {}
+      - - Sample Database
+        - null
+        - ORDERS
+        - CREATED_AT
+    - - field
+      - source-field:
+        - Sample Database
+        - null
+        - ORDERS
+        - USER_ID
+      - - Sample Database
+        - null
+        - PEOPLE
+        - NAME
+    - - field
+      - source-field:
+        - Sample Database
+        - null
+        - ORDERS
+        - PRODUCT_ID
+      - - Sample Database
+        - null
+        - PRODUCTS
+        - TITLE
+    - - field
+      - source-field:
+        - Sample Database
+        - null
+        - ORDERS
+        - PRODUCT_ID
+      - - Sample Database
+        - null
+        - PRODUCTS
+        - CATEGORY
+    - - field
+      - {}
+      - - Sample Database
+        - null
+        - ORDERS
+        - QUANTITY
+    - - field
+      - {}
+      - - Sample Database
+        - null
+        - ORDERS
+        - SUBTOTAL
+    - - field
+      - {}
+      - - Sample Database
+        - null
+        - ORDERS
+        - DISCOUNT
+    - - field
+      - {}
+      - - Sample Database
+        - null
+        - ORDERS
+        - TAX
+    - - field
+      - {}
+      - - Sample Database
+        - null
+        - ORDERS
+        - TOTAL
+    source-table:
+    - Sample Database
+    - null
+    - ORDERS
+    lib/type: mbql.stage/mbql
+  lib/type: mbql/query
+visualization_settings: {}
+card_schema: 24
+serdes/meta:
+- model: Card
+type: question

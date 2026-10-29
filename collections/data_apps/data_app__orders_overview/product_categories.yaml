@@ -1,0 +1,48 @@
+name: Product categories
+entity_id: ExXm_g1uIYLJHlWocf6b0
+creator_id: alexander.polyankin@metabase.com
+display: bar
+collection_id: 6B_9m3KmzLtRb7Jsx3Bgk
+parameters: []
+parameter_mappings: []
+dataset_query:
+  database: Sample Database
+  stages:
+  - aggregation:
+    - - count
+      - {}
+    breakout:
+    - - field
+      - source-field:
+        - Sample Database
+        - null
+        - ORDERS
+        - PRODUCT_ID
+      - - Sample Database
+        - null
+        - PRODUCTS
+        - CATEGORY
+    order-by:
+    - - asc
+      - {}
+      - - field
+        - source-field:
+          - Sample Database
+          - null
+          - ORDERS
+          - PRODUCT_ID
+        - - Sample Database
+          - null
+          - PRODUCTS
+          - CATEGORY
+    source-table:
+    - Sample Database
+    - null
+    - ORDERS
+    lib/type: mbql.stage/mbql
+  lib/type: mbql/query
+visualization_settings: {}
+card_schema: 24
+serdes/meta:
+- model: Card
+type: question

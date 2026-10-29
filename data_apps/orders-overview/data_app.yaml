@@ -1,0 +1,9 @@
+collection: 6B_9m3KmzLtRb7Jsx3Bgk
+description: Read-only view of order volume, revenue and recent orders
+entity_id: ylvWFmPO7M8afSkAES4lo
+name: Orders overview
+path: dist/index.js
+slug: orders-overview
+version: 1
+serdes/meta:
+- model: DataApp
