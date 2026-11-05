@@ -1,0 +1,8 @@
+collection_id: librarylibrarydatadat
+is_published: true
+table_id:
+- QA Postgres
+- public
+- feedback
+serdes/meta:
+- model: TableUserSettings
