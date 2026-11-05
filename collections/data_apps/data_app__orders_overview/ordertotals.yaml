@@ -1,0 +1,33 @@
+name: orderTotals
+entity_id: z_z0RLcAhscp95okrdqII
+creator_id: alexander.polyankin@metabase.com
+display: table
+collection_id: c2NY9QsUYP4wNTmWL2IHR
+parameters: []
+parameter_mappings: []
+dataset_query:
+  database: QA Postgres
+  stages:
+  - aggregation:
+    - - count
+      - {}
+    - - sum
+      - name: revenue
+      - - field
+        - base-type: type/Float
+          effective-type: type/Float
+        - - QA Postgres
+          - public
+          - orders
+          - total
+    source-table:
+    - QA Postgres
+    - public
+    - orders
+    lib/type: mbql.stage/mbql
+  lib/type: mbql/query
+visualization_settings: {}
+card_schema: 24
+serdes/meta:
+- model: Card
+type: question
