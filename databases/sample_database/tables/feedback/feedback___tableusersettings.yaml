@@ -1,0 +1,8 @@
+collection_id: librarylibrarydatadat
+is_published: true
+table_id:
+- Sample Database
+- null
+- FEEDBACK
+serdes/meta:
+- model: TableUserSettings

@@ -1,0 +1,15 @@
+entity_id: aqoaaV9goPLaQujZaH95n
+field_id:
+- Sample Database
+- null
+- ORDERS
+- PRODUCT_ID
+human_readable_field_id:
+- Sample Database
+- null
+- PRODUCTS
+- TITLE
+name: Product ID
+type: external
+serdes/meta:
+- model: Dimension
