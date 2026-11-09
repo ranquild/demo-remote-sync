@@ -1,0 +1,10 @@
+allowed_hosts: []
+collection: 0qCBoD1cmeAL6_43FbcNk
+description: null
+entity_id: NWceTM6Uknfbm8b7Sr31-
+name: orders-products
+path: dist/index.js
+slug: orders-products
+version: 1
+serdes/meta:
+- model: DataApp

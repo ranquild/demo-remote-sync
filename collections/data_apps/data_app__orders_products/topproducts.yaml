@@ -1,0 +1,68 @@
+name: topProducts
+entity_id: jpK8xYUZshBKyvHELLN3L
+creator_id: alexander.polyankin@metabase.com
+display: table
+collection_id: 0qCBoD1cmeAL6_43FbcNk
+parameters: []
+parameter_mappings: []
+dataset_query:
+  database: Sample Database
+  stages:
+  - aggregation:
+    - - count
+      - name: order_count
+    - - sum
+      - name: revenue
+        lib/uuid: 062c1b76-04f1-4ae4-9fcf-5c9140e08074
+      - - field
+        - base-type: type/Float
+          effective-type: type/Float
+        - - Sample Database
+          - null
+          - ORDERS
+          - TOTAL
+    breakout:
+    - - field
+      - base-type: type/Text
+        effective-type: type/Text
+        source-field:
+        - Sample Database
+        - null
+        - ORDERS
+        - PRODUCT_ID
+      - - Sample Database
+        - null
+        - PRODUCTS
+        - TITLE
+    - - field
+      - base-type: type/Text
+        effective-type: type/Text
+        source-field:
+        - Sample Database
+        - null
+        - ORDERS
+        - PRODUCT_ID
+      - - Sample Database
+        - null
+        - PRODUCTS
+        - CATEGORY
+    limit: 10
+    order-by:
+    - - desc
+      - {}
+      - - aggregation
+        - base-type: type/Float
+          effective-type: type/Float
+          lib/source-name: revenue
+        - 062c1b76-04f1-4ae4-9fcf-5c9140e08074
+    source-table:
+    - Sample Database
+    - null
+    - ORDERS
+    lib/type: mbql.stage/mbql
+  lib/type: mbql/query
+visualization_settings: {}
+card_schema: 24
+serdes/meta:
+- model: Card
+type: question

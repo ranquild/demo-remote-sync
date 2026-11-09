@@ -1,0 +1,73 @@
+name: latestOrders
+entity_id: NpUNa_domn2XGab4DZvCi
+creator_id: alexander.polyankin@metabase.com
+display: table
+collection_id: 0qCBoD1cmeAL6_43FbcNk
+parameters: []
+parameter_mappings: []
+dataset_query:
+  database: Sample Database
+  stages:
+  - fields:
+    - - field
+      - base-type: type/BigInteger
+        effective-type: type/BigInteger
+      - - Sample Database
+        - null
+        - ORDERS
+        - ID
+    - - field
+      - base-type: type/DateTime
+        effective-type: type/DateTime
+      - - Sample Database
+        - null
+        - ORDERS
+        - CREATED_AT
+    - - field
+      - base-type: type/Text
+        effective-type: type/Text
+        source-field:
+        - Sample Database
+        - null
+        - ORDERS
+        - PRODUCT_ID
+      - - Sample Database
+        - null
+        - PRODUCTS
+        - TITLE
+    - - field
+      - base-type: type/Integer
+        effective-type: type/Integer
+      - - Sample Database
+        - null
+        - ORDERS
+        - QUANTITY
+    - - field
+      - base-type: type/Float
+        effective-type: type/Float
+      - - Sample Database
+        - null
+        - ORDERS
+        - TOTAL
+    limit: 20
+    order-by:
+    - - desc
+      - {}
+      - - field
+        - base-type: type/DateTime
+          effective-type: type/DateTime
+        - - Sample Database
+          - null
+          - ORDERS
+          - CREATED_AT
+    source-table:
+    - Sample Database
+    - null
+    - ORDERS
+    lib/type: mbql.stage/mbql
+  lib/type: mbql/query
+visualization_settings: {}
+card_schema: 24
+serdes/meta:
+- model: Card
+type: question
