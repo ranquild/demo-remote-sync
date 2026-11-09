@@ -1,8 +1,8 @@
 allowed_hosts: []
 collection: 0qCBoD1cmeAL6_43FbcNk
-description: null
+description: Order totals, monthly orders, revenue by product category, top products and the latest orders.
 entity_id: NWceTM6Uknfbm8b7Sr31-
-name: orders-products
+name: Orders and products
 path: dist/index.js
 slug: orders-products
 version: 1
