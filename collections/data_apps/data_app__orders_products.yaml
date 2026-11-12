@@ -1,6 +1,0 @@
-name: 'Data App: orders-products'
-entity_id: 0qCBoD1cmeAL6_43FbcNk
-slug: data_app__orders_products
-namespace: data-apps
-serdes/meta:
-- model: Collection
