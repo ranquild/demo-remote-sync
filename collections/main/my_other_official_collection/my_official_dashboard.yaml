@@ -1,0 +1,20 @@
+name: My official dashboard
+entity_id: HXpfY3Z9bj639_F5eeK3z
+creator_id: alexander.polyankin@metabase.com
+collection_id: LbqGdT798mipJ0hZXZKbX
+parameters: []
+serdes/meta:
+- model: Dashboard
+dashcards:
+- entity_id: myrkf-pNXLy0Nqgsobm3T
+  card_id: 0AKSvpU9KV_IHfqPTFSRI
+  row: 0
+  col: 0
+  size_x: 12
+  size_y: 9
+  inline_parameters: []
+  parameter_mappings: []
+  series: []
+  visualization_settings: {}
+tabs: []
+width: fixed

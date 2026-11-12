@@ -1,0 +1,22 @@
+name: Orders
+entity_id: 0AKSvpU9KV_IHfqPTFSRI
+creator_id: alexander.polyankin@metabase.com
+display: table
+collection_id: LbqGdT798mipJ0hZXZKbX
+parameters: []
+parameter_mappings: []
+dataset_query:
+  database: Sample Database
+  stages:
+  - source-table:
+    - Sample Database
+    - null
+    - ORDERS
+    lib/type: mbql.stage/mbql
+  lib/type: mbql/query
+visualization_settings: {}
+card_schema: 24
+serdes/meta:
+- model: Card
+dashboard_id: HXpfY3Z9bj639_F5eeK3z
+type: question

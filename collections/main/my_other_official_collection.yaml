@@ -1,0 +1,6 @@
+name: My other official collection
+entity_id: LbqGdT798mipJ0hZXZKbX
+slug: my_other_official_collection
+serdes/meta:
+- model: Collection
+is_remote_synced: true
