@@ -1,0 +1,69 @@
+name: Top 10 products by revenue
+description: Best-selling products by order revenue, with units sold.
+entity_id: N7BkYDUvqBHI795ICwTS2
+creator_id: alexander.polyankin@metabase.com
+display: table
+collection_id: 8xKofzlydprCykLoPytYw
+parameters: []
+parameter_mappings: []
+dataset_query:
+  database: Sample Database
+  stages:
+  - aggregation:
+    - - sum
+      - display-name: Revenue
+        name: revenue
+        lib/uuid: bac8964d-697b-4c33-aae8-3c817572278a
+      - - field
+        - {}
+        - - Sample Database
+          - null
+          - ORDERS
+          - TOTAL
+    - - sum
+      - display-name: Units sold
+        name: units
+      - - field
+        - {}
+        - - Sample Database
+          - null
+          - ORDERS
+          - QUANTITY
+    breakout:
+    - - field
+      - source-field:
+        - Sample Database
+        - null
+        - ORDERS
+        - PRODUCT_ID
+      - - Sample Database
+        - null
+        - PRODUCTS
+        - TITLE
+    limit: 10
+    order-by:
+    - - desc
+      - {}
+      - - aggregation
+        - {}
+        - bac8964d-697b-4c33-aae8-3c817572278a
+    source-table:
+    - Sample Database
+    - null
+    - ORDERS
+    lib/type: mbql.stage/mbql
+  lib/type: mbql/query
+visualization_settings:
+  column_settings:
+    '["name","TITLE"]':
+      column_title: Product
+    '["name","revenue"]':
+      currency: USD
+      decimals: 0
+      number_style: currency
+      show_mini_bar: true
+card_schema: 24
+serdes/meta:
+- model: Card
+dashboard_id: q9FIman83qw2VA717ki5z
+type: question

@@ -1,0 +1,38 @@
+name: Products added over time
+description: New products per quarter.
+entity_id: HSSB4LUP0GmVIjGr0F1Zw
+creator_id: alexander.polyankin@metabase.com
+display: line
+collection_id: 8xKofzlydprCykLoPytYw
+parameters: []
+parameter_mappings: []
+dataset_query:
+  database: Sample Database
+  stages:
+  - aggregation:
+    - - count
+      - display-name: Products added
+        name: products
+    breakout:
+    - - field
+      - temporal-unit: quarter
+      - - Sample Database
+        - null
+        - PRODUCTS
+        - CREATED_AT
+    source-table:
+    - Sample Database
+    - null
+    - PRODUCTS
+    lib/type: mbql.stage/mbql
+  lib/type: mbql/query
+visualization_settings:
+  graph.dimensions:
+  - CREATED_AT
+  graph.metrics:
+  - products
+card_schema: 24
+serdes/meta:
+- model: Card
+dashboard_id: q9FIman83qw2VA717ki5z
+type: question

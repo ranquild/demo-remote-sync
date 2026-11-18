@@ -1,0 +1,247 @@
+name: Products overview
+description: 'Key facts about the product catalog in the Sample Database: size, pricing, ratings, and sales by category.'
+entity_id: q9FIman83qw2VA717ki5z
+creator_id: alexander.polyankin@metabase.com
+collection_id: 8xKofzlydprCykLoPytYw
+parameters:
+- id: category
+  name: Category
+  slug: category
+  type: string/=
+serdes/meta:
+- model: Dashboard
+dashcards:
+- entity_id: xv-mt3UZWh-RnCR2Dxehq
+  card_id: l8PQUgfXD9sQd_2QBYtrD
+  row: 0
+  col: 0
+  size_x: 6
+  size_y: 3
+  inline_parameters: []
+  parameter_mappings:
+  - card_id: l8PQUgfXD9sQd_2QBYtrD
+    parameter_id: category
+    target:
+    - dimension
+    - - field
+      - - Sample Database
+        - null
+        - PRODUCTS
+        - CATEGORY
+      - null
+  series: []
+  visualization_settings: {}
+- entity_id: vbcEkE7Tu3VQrJz3_KiUq
+  card_id: 7MLPgYEZue63zL_J-Pmjc
+  row: 0
+  col: 6
+  size_x: 6
+  size_y: 3
+  inline_parameters: []
+  parameter_mappings:
+  - card_id: 7MLPgYEZue63zL_J-Pmjc
+    parameter_id: category
+    target:
+    - dimension
+    - - field
+      - - Sample Database
+        - null
+        - PRODUCTS
+        - CATEGORY
+      - null
+  series: []
+  visualization_settings: {}
+- entity_id: Vd1v0LYUpCxc_04dBAOzx
+  card_id: w5OGxdzYzR9uBWHmIDf8B
+  row: 0
+  col: 12
+  size_x: 6
+  size_y: 3
+  inline_parameters: []
+  parameter_mappings:
+  - card_id: w5OGxdzYzR9uBWHmIDf8B
+    parameter_id: category
+    target:
+    - dimension
+    - - field
+      - - Sample Database
+        - null
+        - PRODUCTS
+        - CATEGORY
+      - null
+  series: []
+  visualization_settings: {}
+- entity_id: FhW-waV8L1RRaWP7Cgscf
+  card_id: RG-b2OiAC2co_jdPeFcHq
+  row: 0
+  col: 18
+  size_x: 6
+  size_y: 3
+  inline_parameters: []
+  parameter_mappings:
+  - card_id: RG-b2OiAC2co_jdPeFcHq
+    parameter_id: category
+    target:
+    - dimension
+    - - field
+      - - Sample Database
+        - null
+        - PRODUCTS
+        - CATEGORY
+      - source-field:
+        - Sample Database
+        - null
+        - ORDERS
+        - PRODUCT_ID
+  series: []
+  visualization_settings: {}
+- entity_id: zpysEL4pM4ro-EhlthwwN
+  card_id: 72st1-fBcF6CFSaApOjdI
+  row: 3
+  col: 0
+  size_x: 8
+  size_y: 6
+  inline_parameters: []
+  parameter_mappings:
+  - card_id: 72st1-fBcF6CFSaApOjdI
+    parameter_id: category
+    target:
+    - dimension
+    - - field
+      - - Sample Database
+        - null
+        - PRODUCTS
+        - CATEGORY
+      - null
+  series: []
+  visualization_settings: {}
+- entity_id: Fo3GBzJTI-IMqM6xFfGgS
+  card_id: 66QtkAmijM4aF-AIR_75G
+  row: 3
+  col: 8
+  size_x: 8
+  size_y: 6
+  inline_parameters: []
+  parameter_mappings:
+  - card_id: 66QtkAmijM4aF-AIR_75G
+    parameter_id: category
+    target:
+    - dimension
+    - - field
+      - - Sample Database
+        - null
+        - PRODUCTS
+        - CATEGORY
+      - null
+  series: []
+  visualization_settings: {}
+- entity_id: X1XuoI9WtCIcls9cKUjic
+  card_id: qMNsO4cI6ibAlLi9hb0_p
+  row: 3
+  col: 16
+  size_x: 8
+  size_y: 6
+  inline_parameters: []
+  parameter_mappings:
+  - card_id: qMNsO4cI6ibAlLi9hb0_p
+    parameter_id: category
+    target:
+    - dimension
+    - - field
+      - - Sample Database
+        - null
+        - PRODUCTS
+        - CATEGORY
+      - source-field:
+        - Sample Database
+        - null
+        - ORDERS
+        - PRODUCT_ID
+  series: []
+  visualization_settings: {}
+- entity_id: GHX941wPOBL_-KMGpfE2u
+  card_id: 3jYj7Uwf-YkuGpho1S4Xk
+  row: 9
+  col: 0
+  size_x: 12
+  size_y: 6
+  inline_parameters: []
+  parameter_mappings:
+  - card_id: 3jYj7Uwf-YkuGpho1S4Xk
+    parameter_id: category
+    target:
+    - dimension
+    - - field
+      - - Sample Database
+        - null
+        - PRODUCTS
+        - CATEGORY
+      - null
+  series: []
+  visualization_settings: {}
+- entity_id: U-5Qle5WrjzBdMf0OrNrW
+  card_id: fBoRvpTXFVYqmpFPAu8kb
+  row: 9
+  col: 12
+  size_x: 12
+  size_y: 6
+  inline_parameters: []
+  parameter_mappings:
+  - card_id: fBoRvpTXFVYqmpFPAu8kb
+    parameter_id: category
+    target:
+    - dimension
+    - - field
+      - - Sample Database
+        - null
+        - PRODUCTS
+        - CATEGORY
+      - null
+  series: []
+  visualization_settings: {}
+- entity_id: pzZg_TpGGbZ2QTWeWKNgj
+  card_id: HSSB4LUP0GmVIjGr0F1Zw
+  row: 15
+  col: 0
+  size_x: 12
+  size_y: 8
+  inline_parameters: []
+  parameter_mappings:
+  - card_id: HSSB4LUP0GmVIjGr0F1Zw
+    parameter_id: category
+    target:
+    - dimension
+    - - field
+      - - Sample Database
+        - null
+        - PRODUCTS
+        - CATEGORY
+      - null
+  series: []
+  visualization_settings: {}
+- entity_id: xARA1mp-8wib1n5ny5YrB
+  card_id: N7BkYDUvqBHI795ICwTS2
+  row: 15
+  col: 12
+  size_x: 12
+  size_y: 8
+  inline_parameters: []
+  parameter_mappings:
+  - card_id: N7BkYDUvqBHI795ICwTS2
+    parameter_id: category
+    target:
+    - dimension
+    - - field
+      - - Sample Database
+        - null
+        - PRODUCTS
+        - CATEGORY
+      - source-field:
+        - Sample Database
+        - null
+        - ORDERS
+        - PRODUCT_ID
+  series: []
+  visualization_settings: {}
+tabs: []
+width: fixed

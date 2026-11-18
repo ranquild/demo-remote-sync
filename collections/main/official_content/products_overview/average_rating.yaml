@@ -1,0 +1,36 @@
+name: Average rating
+description: Mean product rating (0–5).
+entity_id: w5OGxdzYzR9uBWHmIDf8B
+creator_id: alexander.polyankin@metabase.com
+display: scalar
+collection_id: 8xKofzlydprCykLoPytYw
+parameters: []
+parameter_mappings: []
+dataset_query:
+  database: Sample Database
+  stages:
+  - aggregation:
+    - - avg
+      - display-name: Average rating
+        name: avg_rating
+      - - field
+        - {}
+        - - Sample Database
+          - null
+          - PRODUCTS
+          - RATING
+    source-table:
+    - Sample Database
+    - null
+    - PRODUCTS
+    lib/type: mbql.stage/mbql
+  lib/type: mbql/query
+visualization_settings:
+  column_settings:
+    '["name","avg_rating"]':
+      decimals: 2
+card_schema: 24
+serdes/meta:
+- model: Card
+dashboard_id: q9FIman83qw2VA717ki5z
+type: question

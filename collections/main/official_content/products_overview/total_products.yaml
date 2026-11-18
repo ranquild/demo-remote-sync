@@ -1,0 +1,27 @@
+name: Total products
+description: Number of products in the catalog.
+entity_id: l8PQUgfXD9sQd_2QBYtrD
+creator_id: alexander.polyankin@metabase.com
+display: scalar
+collection_id: 8xKofzlydprCykLoPytYw
+parameters: []
+parameter_mappings: []
+dataset_query:
+  database: Sample Database
+  stages:
+  - aggregation:
+    - - count
+      - display-name: Products
+        name: products
+    source-table:
+    - Sample Database
+    - null
+    - PRODUCTS
+    lib/type: mbql.stage/mbql
+  lib/type: mbql/query
+visualization_settings: {}
+card_schema: 24
+serdes/meta:
+- model: Card
+dashboard_id: q9FIman83qw2VA717ki5z
+type: question

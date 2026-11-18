@@ -1,0 +1,40 @@
+name: Rating distribution
+description: Products per half-point rating band.
+entity_id: fBoRvpTXFVYqmpFPAu8kb
+creator_id: alexander.polyankin@metabase.com
+display: bar
+collection_id: 8xKofzlydprCykLoPytYw
+parameters: []
+parameter_mappings: []
+dataset_query:
+  database: Sample Database
+  stages:
+  - aggregation:
+    - - count
+      - display-name: Products
+        name: products
+    breakout:
+    - - field
+      - binning:
+          bin-width: 0.5
+          strategy: bin-width
+      - - Sample Database
+        - null
+        - PRODUCTS
+        - RATING
+    source-table:
+    - Sample Database
+    - null
+    - PRODUCTS
+    lib/type: mbql.stage/mbql
+  lib/type: mbql/query
+visualization_settings:
+  graph.dimensions:
+  - RATING
+  graph.metrics:
+  - products
+card_schema: 24
+serdes/meta:
+- model: Card
+dashboard_id: q9FIman83qw2VA717ki5z
+type: question

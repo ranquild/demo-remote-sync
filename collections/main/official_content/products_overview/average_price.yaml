@@ -1,0 +1,38 @@
+name: Average price
+description: Mean list price across products.
+entity_id: 7MLPgYEZue63zL_J-Pmjc
+creator_id: alexander.polyankin@metabase.com
+display: scalar
+collection_id: 8xKofzlydprCykLoPytYw
+parameters: []
+parameter_mappings: []
+dataset_query:
+  database: Sample Database
+  stages:
+  - aggregation:
+    - - avg
+      - display-name: Average price
+        name: avg_price
+      - - field
+        - {}
+        - - Sample Database
+          - null
+          - PRODUCTS
+          - PRICE
+    source-table:
+    - Sample Database
+    - null
+    - PRODUCTS
+    lib/type: mbql.stage/mbql
+  lib/type: mbql/query
+visualization_settings:
+  column_settings:
+    '["name","avg_price"]':
+      currency: USD
+      decimals: 2
+      number_style: currency
+card_schema: 24
+serdes/meta:
+- model: Card
+dashboard_id: q9FIman83qw2VA717ki5z
+type: question
