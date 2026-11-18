@@ -1,0 +1,22 @@
+name: Products
+description: All products
+entity_id: jzNBNVZz0pwQg5BRKgVJV
+creator_id: alexander.polyankin@metabase.com
+display: table
+collection_id: 8xKofzlydprCykLoPytYw
+parameters: []
+parameter_mappings: []
+dataset_query:
+  database: Sample Database
+  stages:
+  - source-table:
+    - Sample Database
+    - null
+    - PRODUCTS
+    lib/type: mbql.stage/mbql
+  lib/type: mbql/query
+visualization_settings: {}
+card_schema: 24
+serdes/meta:
+- model: Card
+type: question

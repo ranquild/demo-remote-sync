@@ -1,0 +1,6 @@
+name: Official content
+entity_id: 8xKofzlydprCykLoPytYw
+slug: official_content
+serdes/meta:
+- model: Collection
+is_remote_synced: true
