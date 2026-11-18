@@ -1,0 +1,39 @@
+name: Products by category
+description: How many products each category holds.
+entity_id: 72st1-fBcF6CFSaApOjdI
+creator_id: alexander.polyankin@metabase.com
+display: bar
+collection_id: 8xKofzlydprCykLoPytYw
+parameters: []
+parameter_mappings: []
+dataset_query:
+  database: Sample Database
+  stages:
+  - aggregation:
+    - - count
+      - display-name: Products
+        name: products
+    breakout:
+    - - field
+      - {}
+      - - Sample Database
+        - null
+        - PRODUCTS
+        - CATEGORY
+    source-table:
+    - Sample Database
+    - null
+    - PRODUCTS
+    lib/type: mbql.stage/mbql
+  lib/type: mbql/query
+visualization_settings:
+  graph.dimensions:
+  - CATEGORY
+  graph.metrics:
+  - products
+  graph.show_values: true
+card_schema: 24
+serdes/meta:
+- model: Card
+dashboard_id: q9FIman83qw2VA717ki5z
+type: question

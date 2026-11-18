@@ -1,0 +1,50 @@
+name: Average price by category
+description: Mean list price per category.
+entity_id: 66QtkAmijM4aF-AIR_75G
+creator_id: alexander.polyankin@metabase.com
+display: bar
+collection_id: 8xKofzlydprCykLoPytYw
+parameters: []
+parameter_mappings: []
+dataset_query:
+  database: Sample Database
+  stages:
+  - aggregation:
+    - - avg
+      - display-name: Average price
+        name: avg_price
+      - - field
+        - {}
+        - - Sample Database
+          - null
+          - PRODUCTS
+          - PRICE
+    breakout:
+    - - field
+      - {}
+      - - Sample Database
+        - null
+        - PRODUCTS
+        - CATEGORY
+    source-table:
+    - Sample Database
+    - null
+    - PRODUCTS
+    lib/type: mbql.stage/mbql
+  lib/type: mbql/query
+visualization_settings:
+  column_settings:
+    '["name","avg_price"]':
+      currency: USD
+      decimals: 2
+      number_style: currency
+  graph.dimensions:
+  - CATEGORY
+  graph.metrics:
+  - avg_price
+  graph.show_values: true
+card_schema: 24
+serdes/meta:
+- model: Card
+dashboard_id: q9FIman83qw2VA717ki5z
+type: question
