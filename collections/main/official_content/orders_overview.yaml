@@ -1,0 +1,280 @@
+name: Orders overview
+description: 'Key facts about orders in the Sample Database: volume, revenue, order size, and sales by category, customer, and time.'
+entity_id: ILq_3m99zXYRgyDAult2Y
+creator_id: alexander.polyankin@metabase.com
+collection_id: 8xKofzlydprCykLoPytYw
+parameters:
+- id: category
+  name: Category
+  sectionId: string
+  slug: category
+  type: string/=
+serdes/meta:
+- model: Dashboard
+dashcards:
+- entity_id: kFRkoLqTTNhH-BbJCznkF
+  card_id: mbBPxd74EAWCFwimwtEaG
+  row: 0
+  col: 0
+  size_x: 6
+  size_y: 3
+  inline_parameters: []
+  parameter_mappings:
+  - card_id: mbBPxd74EAWCFwimwtEaG
+    parameter_id: category
+    target:
+    - dimension
+    - - field
+      - - Sample Database
+        - null
+        - PRODUCTS
+        - CATEGORY
+      - source-field:
+        - Sample Database
+        - null
+        - ORDERS
+        - PRODUCT_ID
+  series: []
+  visualization_settings: {}
+- entity_id: UG53osHlPnxbKykoaMB60
+  card_id: auNDb7gQdWDc3eW4uaII4
+  row: 0
+  col: 6
+  size_x: 6
+  size_y: 3
+  inline_parameters: []
+  parameter_mappings:
+  - card_id: auNDb7gQdWDc3eW4uaII4
+    parameter_id: category
+    target:
+    - dimension
+    - - field
+      - - Sample Database
+        - null
+        - PRODUCTS
+        - CATEGORY
+      - source-field:
+        - Sample Database
+        - null
+        - ORDERS
+        - PRODUCT_ID
+  series: []
+  visualization_settings: {}
+- entity_id: sbEg0s_WyZPaowCUqF5UO
+  card_id: gz3dySL1T3oYfNnSyBMLP
+  row: 0
+  col: 12
+  size_x: 6
+  size_y: 3
+  inline_parameters: []
+  parameter_mappings:
+  - card_id: gz3dySL1T3oYfNnSyBMLP
+    parameter_id: category
+    target:
+    - dimension
+    - - field
+      - - Sample Database
+        - null
+        - PRODUCTS
+        - CATEGORY
+      - source-field:
+        - Sample Database
+        - null
+        - ORDERS
+        - PRODUCT_ID
+  series: []
+  visualization_settings: {}
+- entity_id: bo8iOrhNz9cXJ_1Eszibi
+  card_id: hyvPXHQlxQEh2rAyW_Yu1
+  row: 0
+  col: 18
+  size_x: 6
+  size_y: 3
+  inline_parameters: []
+  parameter_mappings:
+  - card_id: hyvPXHQlxQEh2rAyW_Yu1
+    parameter_id: category
+    target:
+    - dimension
+    - - field
+      - - Sample Database
+        - null
+        - PRODUCTS
+        - CATEGORY
+      - source-field:
+        - Sample Database
+        - null
+        - ORDERS
+        - PRODUCT_ID
+  series: []
+  visualization_settings: {}
+- entity_id: 9sa48Zs0ds40vyUS-VuMB
+  card_id: nOE6SyB8dDTzU-XI1LwXV
+  row: 3
+  col: 0
+  size_x: 8
+  size_y: 6
+  inline_parameters: []
+  parameter_mappings:
+  - card_id: nOE6SyB8dDTzU-XI1LwXV
+    parameter_id: category
+    target:
+    - dimension
+    - - field
+      - - Sample Database
+        - null
+        - PRODUCTS
+        - CATEGORY
+      - source-field:
+        - Sample Database
+        - null
+        - ORDERS
+        - PRODUCT_ID
+  series: []
+  visualization_settings: {}
+- entity_id: 1EFA2WAJpmAOMEv0ir7Oy
+  card_id: xD_4FQlaIzsZ8hGMnN2x1
+  row: 3
+  col: 8
+  size_x: 8
+  size_y: 6
+  inline_parameters: []
+  parameter_mappings:
+  - card_id: xD_4FQlaIzsZ8hGMnN2x1
+    parameter_id: category
+    target:
+    - dimension
+    - - field
+      - - Sample Database
+        - null
+        - PRODUCTS
+        - CATEGORY
+      - source-field:
+        - Sample Database
+        - null
+        - ORDERS
+        - PRODUCT_ID
+  series: []
+  visualization_settings: {}
+- entity_id: mEDEWv060iqpJ1EheOEbI
+  card_id: EUPzTTzxU3yFI3PIC0pNu
+  row: 3
+  col: 16
+  size_x: 8
+  size_y: 6
+  inline_parameters: []
+  parameter_mappings:
+  - card_id: EUPzTTzxU3yFI3PIC0pNu
+    parameter_id: category
+    target:
+    - dimension
+    - - field
+      - - Sample Database
+        - null
+        - PRODUCTS
+        - CATEGORY
+      - source-field:
+        - Sample Database
+        - null
+        - ORDERS
+        - PRODUCT_ID
+  series: []
+  visualization_settings: {}
+- entity_id: Z0MrK8uFNL8ktChz4sORH
+  card_id: E8HxHzmBOWUVBlCzAbmaF
+  row: 9
+  col: 0
+  size_x: 12
+  size_y: 6
+  inline_parameters: []
+  parameter_mappings:
+  - card_id: E8HxHzmBOWUVBlCzAbmaF
+    parameter_id: category
+    target:
+    - dimension
+    - - field
+      - - Sample Database
+        - null
+        - PRODUCTS
+        - CATEGORY
+      - source-field:
+        - Sample Database
+        - null
+        - ORDERS
+        - PRODUCT_ID
+  series: []
+  visualization_settings: {}
+- entity_id: J9XN-7ETstmIe_rdO_oQ1
+  card_id: 7QhAfQ8KjgGTWOpaty-Ot
+  row: 9
+  col: 12
+  size_x: 12
+  size_y: 6
+  inline_parameters: []
+  parameter_mappings:
+  - card_id: 7QhAfQ8KjgGTWOpaty-Ot
+    parameter_id: category
+    target:
+    - dimension
+    - - field
+      - - Sample Database
+        - null
+        - PRODUCTS
+        - CATEGORY
+      - source-field:
+        - Sample Database
+        - null
+        - ORDERS
+        - PRODUCT_ID
+  series: []
+  visualization_settings: {}
+- entity_id: 2wRGe8KrdznUJzzM3fSSa
+  card_id: 4uF2seuxTspBBea2QQVvz
+  row: 15
+  col: 0
+  size_x: 12
+  size_y: 8
+  inline_parameters: []
+  parameter_mappings:
+  - card_id: 4uF2seuxTspBBea2QQVvz
+    parameter_id: category
+    target:
+    - dimension
+    - - field
+      - - Sample Database
+        - null
+        - PRODUCTS
+        - CATEGORY
+      - source-field:
+        - Sample Database
+        - null
+        - ORDERS
+        - PRODUCT_ID
+  series: []
+  visualization_settings: {}
+- entity_id: 73jtu1Cii34oAyVjBRTE7
+  card_id: S8ulHVz8JfRNLIYVmlPJi
+  row: 15
+  col: 12
+  size_x: 12
+  size_y: 8
+  inline_parameters: []
+  parameter_mappings:
+  - card_id: S8ulHVz8JfRNLIYVmlPJi
+    parameter_id: category
+    target:
+    - dimension
+    - - field
+      - - Sample Database
+        - null
+        - PRODUCTS
+        - CATEGORY
+      - source-field:
+        - Sample Database
+        - null
+        - ORDERS
+        - PRODUCT_ID
+  series: []
+  visualization_settings: {}
+tabs: []
+width: fixed

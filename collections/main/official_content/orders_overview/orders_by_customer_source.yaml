@@ -1,0 +1,43 @@
+name: Orders by customer source
+description: How many orders came from customers acquired through each channel.
+entity_id: EUPzTTzxU3yFI3PIC0pNu
+creator_id: alexander.polyankin@metabase.com
+display: bar
+collection_id: 8xKofzlydprCykLoPytYw
+parameters: []
+parameter_mappings: []
+dataset_query:
+  database: Sample Database
+  stages:
+  - aggregation:
+    - - count
+      - display-name: Orders
+        name: orders
+    breakout:
+    - - field
+      - source-field:
+        - Sample Database
+        - null
+        - ORDERS
+        - USER_ID
+      - - Sample Database
+        - null
+        - PEOPLE
+        - SOURCE
+    source-table:
+    - Sample Database
+    - null
+    - ORDERS
+    lib/type: mbql.stage/mbql
+  lib/type: mbql/query
+visualization_settings:
+  graph.dimensions:
+  - SOURCE
+  graph.metrics:
+  - orders
+  graph.show_values: true
+card_schema: 24
+serdes/meta:
+- model: Card
+dashboard_id: ILq_3m99zXYRgyDAult2Y
+type: question

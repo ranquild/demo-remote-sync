@@ -1,0 +1,27 @@
+name: Total orders
+description: Number of confirmed orders.
+entity_id: mbBPxd74EAWCFwimwtEaG
+creator_id: alexander.polyankin@metabase.com
+display: scalar
+collection_id: 8xKofzlydprCykLoPytYw
+parameters: []
+parameter_mappings: []
+dataset_query:
+  database: Sample Database
+  stages:
+  - aggregation:
+    - - count
+      - display-name: Orders
+        name: orders
+    source-table:
+    - Sample Database
+    - null
+    - ORDERS
+    lib/type: mbql.stage/mbql
+  lib/type: mbql/query
+visualization_settings: {}
+card_schema: 24
+serdes/meta:
+- model: Card
+dashboard_id: ILq_3m99zXYRgyDAult2Y
+type: question

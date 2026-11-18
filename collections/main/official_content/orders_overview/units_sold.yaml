@@ -1,0 +1,33 @@
+name: Units sold
+description: Sum of order quantities.
+entity_id: hyvPXHQlxQEh2rAyW_Yu1
+creator_id: alexander.polyankin@metabase.com
+display: scalar
+collection_id: 8xKofzlydprCykLoPytYw
+parameters: []
+parameter_mappings: []
+dataset_query:
+  database: Sample Database
+  stages:
+  - aggregation:
+    - - sum
+      - display-name: Units sold
+        name: units
+      - - field
+        - {}
+        - - Sample Database
+          - null
+          - ORDERS
+          - QUANTITY
+    source-table:
+    - Sample Database
+    - null
+    - ORDERS
+    lib/type: mbql.stage/mbql
+  lib/type: mbql/query
+visualization_settings: {}
+card_schema: 24
+serdes/meta:
+- model: Card
+dashboard_id: ILq_3m99zXYRgyDAult2Y
+type: question

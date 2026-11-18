@@ -1,0 +1,38 @@
+name: Average order value
+description: Mean order total.
+entity_id: gz3dySL1T3oYfNnSyBMLP
+creator_id: alexander.polyankin@metabase.com
+display: scalar
+collection_id: 8xKofzlydprCykLoPytYw
+parameters: []
+parameter_mappings: []
+dataset_query:
+  database: Sample Database
+  stages:
+  - aggregation:
+    - - avg
+      - display-name: Average order value
+        name: avg_order_value
+      - - field
+        - {}
+        - - Sample Database
+          - null
+          - ORDERS
+          - TOTAL
+    source-table:
+    - Sample Database
+    - null
+    - ORDERS
+    lib/type: mbql.stage/mbql
+  lib/type: mbql/query
+visualization_settings:
+  column_settings:
+    '["name","avg_order_value"]':
+      currency: USD
+      decimals: 2
+      number_style: currency
+card_schema: 24
+serdes/meta:
+- model: Card
+dashboard_id: ILq_3m99zXYRgyDAult2Y
+type: question

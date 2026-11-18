@@ -1,0 +1,63 @@
+name: Top 10 customers by revenue
+description: Customers who spent the most, with their order counts.
+entity_id: S8ulHVz8JfRNLIYVmlPJi
+creator_id: alexander.polyankin@metabase.com
+display: table
+collection_id: 8xKofzlydprCykLoPytYw
+parameters: []
+parameter_mappings: []
+dataset_query:
+  database: Sample Database
+  stages:
+  - aggregation:
+    - - sum
+      - display-name: Revenue
+        name: revenue
+        lib/uuid: 0b5c1b8e-3a7e-4d2a-9f1e-4c8a2f5d6e71
+      - - field
+        - {}
+        - - Sample Database
+          - null
+          - ORDERS
+          - TOTAL
+    - - count
+      - display-name: Orders
+        name: orders
+    breakout:
+    - - field
+      - source-field:
+        - Sample Database
+        - null
+        - ORDERS
+        - USER_ID
+      - - Sample Database
+        - null
+        - PEOPLE
+        - NAME
+    limit: 10
+    order-by:
+    - - desc
+      - {}
+      - - aggregation
+        - {}
+        - 0b5c1b8e-3a7e-4d2a-9f1e-4c8a2f5d6e71
+    source-table:
+    - Sample Database
+    - null
+    - ORDERS
+    lib/type: mbql.stage/mbql
+  lib/type: mbql/query
+visualization_settings:
+  column_settings:
+    '["name","NAME"]':
+      column_title: Customer
+    '["name","revenue"]':
+      currency: USD
+      decimals: 0
+      number_style: currency
+      show_mini_bar: true
+card_schema: 24
+serdes/meta:
+- model: Card
+dashboard_id: ILq_3m99zXYRgyDAult2Y
+type: question
